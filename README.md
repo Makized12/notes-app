@@ -1,11 +1,13 @@
 # Notes App
 
 A full-stack notes app built with the MERN stack (MongoDB, Express, React, Node.js).
+Add, edit and delete notes. Everything is saved permanently in MongoDB.
 
-## Status
-- Backend REST API (Node.js + Express): done
-- MongoDB database (Mongoose + Atlas): done, notes are saved permanently
-- React frontend: coming next
+## Features
+- Create, read, update and delete notes
+- REST API built with Express
+- Data stored in MongoDB Atlas using Mongoose
+- React frontend built with Vite
 
 ## API endpoints
 | Method | Endpoint | What it does |
@@ -15,19 +17,29 @@ A full-stack notes app built with the MERN stack (MongoDB, Express, React, Node.
 | PUT | /api/notes/:id | Edit a note |
 | DELETE | /api/notes/:id | Delete a note |
 
-## Run the backend
+## Run it locally
 
-Create a file named .env inside the backend folder with your own MongoDB Atlas connection string:
+You need Node.js and a free MongoDB Atlas cluster.
 
-    MONGODB_URI=your_connection_string_here
+1. Backend. Create a file named .env inside the backend folder:
 
-Then run:
+        MONGODB_URI=your_connection_string_here
 
-    cd backend
-    npm install
-    node server.js
+   Then run:
 
-The server runs on http://localhost:5000
+        cd backend
+        npm install
+        node server.js
+
+   The API runs on http://localhost:5000
+
+2. Frontend. In a second terminal:
+
+        cd frontend
+        npm install
+        npm run dev
+
+   Open http://localhost:5173
 
 ## Tech stack
-React, Node.js, Express, MongoDB (Mongoose)
+React (Vite), Node.js, Express, MongoDB (Mongoose)
