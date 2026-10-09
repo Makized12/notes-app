@@ -3,8 +3,8 @@
 A full-stack notes app built with the MERN stack (MongoDB, Express, React, Node.js).
 
 ## Status
-- Backend REST API (Node.js + Express): done, notes are stored in memory for now
-- MongoDB database connection: in progress
+- Backend REST API (Node.js + Express): done
+- MongoDB database (Mongoose + Atlas): done, notes are saved permanently
 - React frontend: coming next
 
 ## API endpoints
@@ -17,6 +17,12 @@ A full-stack notes app built with the MERN stack (MongoDB, Express, React, Node.
 
 ## Run the backend
 
+Create a file named .env inside the backend folder with your own MongoDB Atlas connection string:
+
+    MONGODB_URI=your_connection_string_here
+
+Then run:
+
     cd backend
     npm install
     node server.js
@@ -24,4 +30,4 @@ A full-stack notes app built with the MERN stack (MongoDB, Express, React, Node.
 The server runs on http://localhost:5000
 
 ## Tech stack
-React, Node.js, Express, MongoDB
+React, Node.js, Express, MongoDB (Mongoose)
